@@ -1,0 +1,9 @@
+# Everything that changes on the live server stays out of Git:
+# saved content, leads, the admin account and uploaded images.
+/data/*
+!/data/.htaccess
+!/data/index.html
+/uploads/*
+!/uploads/.htaccess
+!/uploads/index.html
+.DS_Store

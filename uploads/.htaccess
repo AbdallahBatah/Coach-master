@@ -1,0 +1,8 @@
+# Uploaded files are images only. Nothing in this folder may run as code.
+<FilesMatch "\.(?i:php\d?|phtml|phar|pl|py|cgi|sh|html?|js|svg)$">
+Require all denied
+</FilesMatch>
+<IfModule mod_php.c>
+php_flag engine off
+</IfModule>
+Options -Indexes -ExecCGI
